@@ -1,9 +1,11 @@
+# this code is taken from https://github.com/brentp/pyfasta (12.6.2016)
+# but numpy was removed for easier compatibility with easy linux systems
+
 from __future__ import print_function
 import string
 import os.path
 from collections import Mapping
 import sys
-import numpy as np
 
 from records import NpyFastaRecord
 
@@ -208,7 +210,8 @@ class Fasta(Mapping):
             sequence = complement(sequence)[::-1]
 
         if asstring: return sequence
-        return np.array(sequence, dtype='c')
+        #return np.array(sequence, dtype='c')
+        return sequence # removed numpy
 
     def _seq_from_keys(self, f, fasta, exon_keys, base='locations', one_based=True):
         """Internal:
