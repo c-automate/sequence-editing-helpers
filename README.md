@@ -29,7 +29,7 @@ This project is using [pyfasta](https://github.com/brentp/pyfasta) from
 Aligne And Correct Sequences
 ============================
             
-This is a script that tries to correct the forward sequence using 
+This is a script that corrects the forward sequence using 
 information of the reverse complement. Therefore it takes a fasta file 
 with two sequences.
 It finds the reverse complement and then alignes it with the forward.
@@ -124,7 +124,7 @@ Example:
 To run a test just type the following commands in you linux terminal:
 		./correct_aligned_sequence.py example_data_aligned.fasta
 
-                ./correct_aligned_sequence   # <- this is the command
+                ./correct_aligned_sequence.py   # <- this is the command
                  # (Tab the "Tab" key for automatic completion)
                  # followed by the name of the aligned fasta file
 
