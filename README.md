@@ -67,6 +67,7 @@ Usage:
 Example1: 
 ---------
 Running the script with example data:
+
             ./aligne_and_correct_sequences.py example_data_raw.fasta
             
 Produces the following output:
@@ -86,6 +87,7 @@ Produces the following output:
 
              
 To see the used example data type
+
              cat example_data_raw.fasta
              
 This will show the following:
@@ -99,6 +101,7 @@ This will show the following:
 Example2: 
 ---------
 Processes all fasta files in the folder
+
             ./aligne_and_correct_sequences.py *.fasta
 
 
@@ -124,7 +127,10 @@ Example:
 --------
 
 To run a test just type the following commands in you linux terminal:
+
 		./correct_aligned_sequence.py example_data_aligned.fasta
+
+Detailed description:
 
                 ./correct_aligned_sequence.py   # <- this is the command
                  # (Tab the "Tab" key for automatic completion)
