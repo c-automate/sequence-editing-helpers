@@ -66,19 +66,11 @@ Usage:
              
 Example1: 
 ---------
+Running the script with example data:
             ./aligne_and_correct_sequences.py example_data_raw.fasta
-
-             cat example_data_raw.fasta
-             >example_sequence_F
-             AAGATATWWATATAKGATTTTCTAATGTGTTMAGGWKCAMGAAAGAWATGGATTKATCTG
-             CAYTTCGCGTTGAAGAAGTACAAAATGTCATTAATG
-             >example_sequence_R
-             GATTTYCTGCAKAGSRTWARKGACWTTTMGKACTTCTKCRACGCGRAATGCARATAARTC
-             CWTTTCKTTCGWGAACCTTWRSWCMTTAGAWRATCR
-
             
 Produces the following output:
-            
+
              ...
              Merged sequence will be:
              -----------------------
@@ -92,13 +84,23 @@ Produces the following output:
              mkdir: cannot create directory ‘merged’: File exists
              Saving a copy of the merged sequence to merged/ example_data_raw.fasta.needle.merged.fasta
 
-            
-            
+             
+To see the used example data type
+             cat example_data_raw.fasta
+             
+This will show the following:
+
+             >example_sequence_F
+             AAGATATWWATATAKGATTTTCTAATGTGTTMAGGWKCAMGAAAGAWATGGATTKATCTG
+             CAYTTCGCGTTGAAGAAGTACAAAATGTCATTAATG
+             >example_sequence_R
+             GATTTYCTGCAKAGSRTWARKGACWTTTMGKACTTCTKCRACGCGRAATGCARATAARTC
+             CWTTTCKTTCGWGAACCTTWRSWCMTTAGAWRATCR            
 Example2: 
 ---------
-                ./aligne_and_correct_sequences.py *.fasta
-        
 Processes all fasta files in the folder
+            ./aligne_and_correct_sequences.py *.fasta
+
 
 
 
